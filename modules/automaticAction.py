@@ -112,4 +112,4 @@ class AutomaticAction(HttpRequests):
                            (len(group_list), total, len(group_list), time.time() - time_record)
                 self.send_admin(complete)
         except Exception as e:
-            self.send_admin('微博推送发生错误：' + str(e))
+            print('VBlog', e)
